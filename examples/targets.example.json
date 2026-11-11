@@ -1,0 +1,41 @@
+{
+  "targets": [
+    {
+      "company": "Airbnb",
+      "careersUrl": "https://careers.airbnb.com/",
+      "ats": "greenhouse",
+      "board": "airbnb",
+      "domain": "airbnb.com",
+      "owner": "Your Name",
+      "ownerEmail": "you@yourcompany.com",
+      "tier": "A",
+      "notes": "ATS given explicitly: fastest and most reliable."
+    },
+    {
+      "company": "Palantir",
+      "careersUrl": "https://jobs.lever.co/palantir",
+      "owner": "Your Name",
+      "tier": "B",
+      "notes": "ATS detected from the URL."
+    },
+    {
+      "company": "Ramp",
+      "careersUrl": "https://jobs.ashbyhq.com/ramp",
+      "tier": "B",
+      "roles": ["cto", "vp_engineering", "ciso"],
+      "notes": "Per-company role list overrides WATCH_ROLES."
+    },
+    {
+      "company": "bunq",
+      "careersUrl": "https://bunq.recruitee.com/",
+      "tier": "C"
+    },
+    {
+      "company": "Example Custom Careers Page",
+      "careersUrl": "https://www.example.com/careers",
+      "enabled": false,
+      "selectors": { "item": ".job-card", "title": "h3", "link": "a", "location": ".job-location" },
+      "notes": "Plain HTML page: JSON-LD is read first, then these CSS selectors, then job-like links. Disabled example."
+    }
+  ]
+}
